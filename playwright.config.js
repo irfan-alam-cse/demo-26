@@ -20,7 +20,7 @@ module.exports = defineConfig({
   reporter:"html",
   use: {
    browserName:'chromium',
-   headless: false,
+   headless: true,
    screenshot: 'on',
    trace: 'retain-on-failure',
    ignoreHTTPSErrors:true, //to open the site even if connection is not secure [SSL error]
