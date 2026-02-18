@@ -13,12 +13,11 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
   testDir: './tests',
   //retries:1,
-  workers:5,
   timeout: 40*1000,
   expect:{
     timeout: 5*1000,
   },
-  reporter:[["html"],['line'], ['allure-playwright']],
+  reporter:"html",
   use: {
    browserName:'chromium',
    headless: true,
